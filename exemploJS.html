@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*var nome = 'Gleison';
+        var idade;
+        idade = 29; //isso é um comentário
+        var peso = 61.4
+        alert("Hello Word! " + nome + " Sua idade é: " + idade);
+        alert("Peso: " + peso); // + -> operador de  concatenacao
+        alert(10 + 4);*/
+        function exibirAlerta(){
+            alert("Eiiiiee povo!"); //Saída
+        }   
+        function soma(){
+            var a = parseInt(prompt("Informe um valor: ")); //Entrada
+            var b = parseInt(prompt("Informe um valor: "));
+            soma = a + b;
+
+            alert(soma) ;
+        }
+
+        function imc(){
+            var peso;
+            var altura;
+
+            peso = parseFloat(prompt("Informe o peso: "));
+            altura = parseFloat(prompt("Informe a altura: "));
+
+            var imc = peso/(altura * altura);
+
+            alert("Seu imc é: " + imc);
+        }
+    </script>
+</head>
+<body>
+    <!--button onclick="exibirAlerta()">ALERTA</button-->
+    <button onclick="imc()">ALERTA</button>
+    
+</body>
+</html>
