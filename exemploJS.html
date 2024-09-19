@@ -21,7 +21,7 @@
         function soma(){
             var a = parseInt(prompt("Informe um valor: ")); //Entrada
             var b = parseInt(prompt("Informe um valor: ")); //parseInt -> converte para inteiro
-            soma = a + b;
+            var soma = a + b;
 
             alert(soma) ;
         }
@@ -92,11 +92,7 @@
             var resposta;
 
             do {
-                var a = parseInt(prompt("Informe um valor: ")); //Entrada
-                var b = parseInt(prompt("Informe um valor: ")); //parseInt -> converte para inteiro
-                soma = a + b;
-
-                alert(soma) ;
+                soma();
 
                 resposta = prompt('Deseja continuar?');
             } while (resposta == "sim");
@@ -112,7 +108,7 @@
 </head>
 <body>
     <!--button onclick="exibirAlerta()">ALERTA</button-->
-    <button onclick="contaAte10_3()">ALERTA</button>
+    <button onclick="desejaContinuar()">ALERTA</button>
     
 </body>
 </html>
