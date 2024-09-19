@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        /*var nome = 'Gleison';
+        /*
+        Declarando variáveis
+        var nome = 'Gleison';
         var idade;
         idade = 29; //isso é um comentário
         var peso = 61.4
+
         alert("Hello Word! " + nome + " Sua idade é: " + idade);
         alert("Peso: " + peso); // + -> operador de  concatenacao
         alert(10 + 4);*/
@@ -17,7 +20,7 @@
         }   
         function soma(){
             var a = parseInt(prompt("Informe um valor: ")); //Entrada
-            var b = parseInt(prompt("Informe um valor: "));
+            var b = parseInt(prompt("Informe um valor: ")); //parseInt -> converte para inteiro
             soma = a + b;
 
             alert(soma) ;
@@ -34,11 +37,82 @@
 
             alert("Seu imc é: " + imc);
         }
+
+        function eMaior(){
+            var idade = parseInt(prompt("Informe sua idade: "))
+
+            if (idade > 17) {
+                alert('Maior de idade');
+            } else {
+                alert('Menor de idade');
+            }
+        }
+
+        function tipoFruta(){
+            var fruta = prompt('Informe uma fruta: ');
+
+            switch (fruta) {
+                case 'laranja':
+                    alert('Cítrica!');
+                    break;
+                case 'mamao':
+                    alert('Doce!');
+                    break;
+                case 'limao':
+                    alert('Cítrica!');
+                    break;
+                default:
+                    alert('Fruta não cadastrada');
+                    break;  
+            }
+        }
+
+        function contaAte10(){
+            var num = 0;
+            while (num < 11) {
+                alert(num);
+                num++; // num = num + 1
+            }
+        }
+
+        function contaAte10_2(){
+            var num = 0;
+            do {
+                alert(num);
+                num++;
+            } while (num < 11);
+            //no while é feito o teste antes
+            //de executar o bloco de código
+            //isto é,desde a primeira iteração
+            //já no do..while, a primeira interação
+            //não é testada
+        }
+
+        function desejaContinuar(){
+            var resposta;
+
+            do {
+                var a = parseInt(prompt("Informe um valor: ")); //Entrada
+                var b = parseInt(prompt("Informe um valor: ")); //parseInt -> converte para inteiro
+                soma = a + b;
+
+                alert(soma) ;
+
+                resposta = prompt('Deseja continuar?');
+            } while (resposta == "sim");
+        }
+
+        function contaAte10_3() {
+            for(var num = 0;num < 11; num+=3){
+                alert(num);
+            }
+        }
+
     </script>
 </head>
 <body>
     <!--button onclick="exibirAlerta()">ALERTA</button-->
-    <button onclick="imc()">ALERTA</button>
+    <button onclick="contaAte10_3()">ALERTA</button>
     
 </body>
 </html>
