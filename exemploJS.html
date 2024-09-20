@@ -104,11 +104,73 @@
             }
         }
 
+        function calculadora(){
+            var operacao = prompt("Desja fazer qual operação? ");
+            var num1 = parseFloat(prompt("Informe o primeiro numero: "));
+            var num2 = parseFloat(prompt("Informe o segundo numero: "));
+
+            if (operacao == 'soma') {
+                alert(num1 + num2);
+            } else {
+              if (operacao == 'subtracao') {
+                alert(num1 - num2);
+              } else {
+                if (operacao == 'multiplicacao') {
+                    alert(num1 * num2);
+                } else {
+                    if (operacao == 'divisao') {
+                        alert(num1/num2);
+                    } else {
+                        alert('opeacao invalida');
+                    }
+                }
+              }  
+            }
+        }
+
+        function calculadora2(){
+            var operacao = prompt("Desja fazer qual operação? ");
+            var num1 = parseFloat(prompt("Informe o primeiro numero: "));
+            var num2 = parseFloat(prompt("Informe o segundo numero: "));
+
+            switch (operacao) {
+                case 'soma':
+                    alert(num1 + num2);
+                    break;
+                case 'subtracao':
+                    alert(num1 - num2);
+                    break;
+                case 'multiplicacao':
+                    alert(num1 * num2);
+                    break;
+                case 'divisao':
+                    alert(num1/num2);
+                default:
+                    alert('Operação Inválida');
+                    break;
+            }
+        }
+
+    
+        function vetor(){
+            var vetorNum = [1,2,3];
+            /*
+            1. inicia o contador
+            2. condição de parada
+            3. incremento do contador
+            */
+            var soma = 0;
+            for(var cont = 0; cont < vetorNum.length; cont++){
+                soma += vetorNum[cont];
+            }
+
+            alert('soma de ' + vetorNum.length + ' elementos: ' + soma);
+        }
     </script>
 </head>
 <body>
-    <!--button onclick="exibirAlerta()">ALERTA</button-->
-    <button onclick="desejaContinuar()">ALERTA</button>
+
+    <button onclick="vetor()">ALERTA</button>
     
 </body>
 </html>
