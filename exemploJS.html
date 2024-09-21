@@ -129,7 +129,7 @@
         }
 
         function calculadora2(){
-            var operacao = prompt("Desja fazer qual operação? ");
+            var operacao = prompt("Deseja fazer qual operação? ");
             var num1 = parseFloat(prompt("Informe o primeiro numero: "));
             var num2 = parseFloat(prompt("Informe o segundo numero: "));
 
@@ -166,11 +166,28 @@
 
             alert('soma de ' + vetorNum.length + ' elementos: ' + soma);
         }
+
+        function lerVetor(){
+            var vetor = [];
+            do {
+                var valor = parseInt(prompt("Informe um valor: "));
+                vetor.push(valor);    
+            } while (valor != -1);
+        
+
+            return vetor;
+        }
+
+        function ultimaPosicaoVetor(){
+            var a = lerVetor();
+
+            alert(a[a.length - 2]);
+        }
     </script>
 </head>
 <body>
 
-    <button onclick="vetor()">ALERTA</button>
+    <button onclick="ultimaPosicaoVetor()">ALERTA</button>
     
 </body>
 </html>
