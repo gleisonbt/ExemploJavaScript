@@ -241,3 +241,10 @@
             //alert(valorTag);
             document.getElementById("titulo").innerHTML = "Cabeçalho Alterado!";
         }
+
+        function criarTagH2(){
+            var cabecalho2 = document.createElement("h2");
+            cabecalho2.setAttribute("id","cabecalho2");
+            document.getElementsByTagName("body")[0].appendChild(cabecalho2);
+            document.getElementById("cabecalho2").innerHTML = "relou :)";
+        }
