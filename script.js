@@ -248,3 +248,7 @@
             document.getElementsByTagName("body")[0].appendChild(cabecalho2);
             document.getElementById("cabecalho2").innerHTML = "relou :)";
         }
+
+        function pegarValor(){
+            alert(document.getElementById("nome").value);
+        }
